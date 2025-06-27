@@ -1,19 +1,24 @@
 # -*- coding: utf-8 -*-
 """
-Éditeur de Spyder
-
-Ceci est un script temporaire.
+ Original Author:  Camille Gautier
+ Contributors:
+ Last edited by: Camille GAutier
+ Repository:  https://github.com/Camille_Gau/Calcul-de-desurface-png/
+ Created:    2025-27-06
+ Updated:
 """
 
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
+%matplotlib qt5   #To have an exterior console to interact with
+
 # === ÉCHELLE : 1 pixel = ? mètres
 scale_m_per_pixel = 100/76  # à adapter
 
 # === CHARGEMENT IMAGE ===
-image_path = r"C:\Users\cgautier\Documents\Calcul surface\gote.png"  # adapter
+image_path = r"goteborg.png"  # adapter
 image = cv2.imread(image_path)
 image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
